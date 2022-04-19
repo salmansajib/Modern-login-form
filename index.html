@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Login form</title>
+  </head>
+  <body>
+    <div class="container">
+      <ion-icon class="person-icon" name="person-circle"></ion-icon>
+      <p class="login">Login</p>
+      <form action="#">
+        <div class="name">
+          <input
+            class="username-input"
+            type="text"
+            name="username"
+            placeholder="Username..."
+            autocomplete="off"
+            required
+          />
+          <ion-icon class="username-icon" name="person"></ion-icon>
+        </div>
+        <div class="password">
+          <input
+            class="password-input"
+            type="password"
+            name="password"
+            placeholder="password..."
+            autocomplete="off"
+            required
+          />
+          <ion-icon class="password-icon" name="lock-closed"></ion-icon>
+        </div>
+        <input class="form-submit" type="submit" value="Sign in" />
+        <a href="#" class="forget-password">Forget password!</a>
+      </form>
+      <div class="or-signup">
+        <p class="signup">or sign Up Using</p>
+        <div class="signup-icons">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-google"></ion-icon>
+          <ion-icon name="logo-apple"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!--    ion-icon    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

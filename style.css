@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(237, 246, 249);
+  color: rgb(237, 246, 249);
+  display: grid;
+  place-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+a,
+ion-icon {
+  display: block;
+  
+}
+
+.container {
+  width: 350px;
+  background-color: rgb(72, 12, 168);
+  border-radius: 1rem;
+  padding-inline: 1rem;
+}
+
+.person-icon {
+  font-size: 5rem;
+  background-color: rgb(237, 246, 249);
+  border-radius: 50%;
+  color: rgb(72, 12, 168);
+  margin-top: -2.5rem;
+  margin-inline: auto;
+}
+
+.login {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(191, 210, 0);
+  margin-block: 1rem;
+  text-transform: capitalize;
+}
+
+form > * + * {
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 1000px;
+  padding-block: .5rem;
+}
+
+.name,
+.password {
+  width: 100%;
+  position: relative;
+}
+
+.username-input,
+.password-input {
+  padding-left: 3rem;
+  color: rgba(72, 12, 168,1);
+}
+
+.username-input:focus,
+.password-input:focus {
+  outline: 2px solid rgb(191, 210, 0);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(72, 12, 168,.5);
+}
+
+.username-icon,
+.password-icon {
+  position: absolute;
+  color: rgb(72, 12, 168);
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.form-submit {
+  background-color: rgb(191, 210, 0);
+  color: rgb(72, 12, 168);
+  font-weight: 500;
+  transition: background-color 200ms ease-in-out;
+}
+
+.form-submit:hover {
+  background-color: rgb(180, 196, 0);
+  cursor: pointer;
+}
+
+.forget-password {
+  width: max-content;
+  margin-inline: auto;
+  color: rgb(191, 210, 0);
+  text-decoration: none;
+}
+
+.forget-password:hover {
+  text-decoration: underline;
+}
+
+.or-signup {
+  margin-block: 2rem;
+  text-transform: capitalize;
+}
+
+.signup-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.signup-icons > ion-icon {
+  font-size: 2rem;
+  color: rgb(191, 210, 0);
+  transition: color 200ms linear;
+}
+
+.signup-icons > ion-icon:hover {
+  color: rgb(237, 242, 244);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
